@@ -3,8 +3,8 @@
 A collection of a few previous statistics projects and assignments.
 =====
 
-## Statistical Methods
-# Focused on applications of simple and multiple linear regression in R #
+Statistical Methods
+Focused on applications of simple and multiple linear regression in R #
 
 -----
 
