@@ -12,7 +12,7 @@ A collection of a few previous statistics projects and assignments.
 >Covered both the mathematical basis and computational implementation in R of a wide range of data mining topics. 
 >>Topics included: multiple linear regression in high dimensions, cross validation methods, logistic regression, K nearest neighbors, discriminant analysis, decision trees, bagging/random forests/boosting, support vector machines, principal component analysis, and cluster analysis. 
 
-[Principal_Component_Analysis](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_PCA/Principal_Component_Analysis.pdf) is an assignment from my Data Mining class in which **Principal Component Analysis** and **Cluster Analysis** were used to classify flowers. 
+[Principal_Component_Analysis](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_PCA/Principal_Component_Analysis.pdf) is an assignment from my Data Mining class in which **principal component analysis** and **cluster analysis** were used to classify flowers. 
 
 
 [Logistic_Regression_LDA_QDA_KNN](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_LogisticReg_LDA_QDA_KNN/Logistic_Regression_LDA_QDA_KNN.pdf) is another assignment from my Data Mining class. **logistic regression**, **linear discriminant analysis**, **quadratic discriminant analysis**, and **K-nearest neighbors** are applied to data regarding survival rates on the RMS Titanic.
@@ -34,6 +34,8 @@ A collection of a few previous statistics projects and assignments.
 ## Machine Learning
 >Focused heavily on the mathematical derivation of machine learning methods with assignments including implementation of some methods in Python. Unfortunately I currently cannot locate my python files for these assignments but I do have a couple pdfs at hand of results and derivations. 
 >>Topics included: regression (including ridge regression and Lasso), optimization by gradient descent and Lagrange multiplier, density estimation, principal component analysis, support vector machines, nearest neighbor classifiers, naive Bayes classification, artificial neural networks, ensemble learning, and online learning.
+
+[MachineLearning_Gradient_Descent](https://github.com/MaxMachalek/PriorStatsWork/blob/main/machalekMachineLearning_Gradient_Descent.pdf) is a simple assignment in which we utilize both **gradient descent** and **Lagrange multiplier** methods of **optimization**. It required creating an update formula with a stopping critereon then implemented those in python, plotting convergence graphs with different hyperparameters. We were also required to apply the **Lagrange multiplier** for a minimization problem. 
 
 
 ...more to be added...
