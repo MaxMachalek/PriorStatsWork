@@ -1,5 +1,3 @@
-# PriorStatsWork
-
 A collection of a few previous statistics projects and assignments.
 =====
 
