@@ -12,7 +12,7 @@ A collection of a few previous statistics projects and assignments.
 
 -----
 
-[DataMining_LogisticReg_LDA_QDA_KNN](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_LogisticReg_LDA_QDA_KNN/Logistic_Regression_LDA_QDA_KNN.pdf) is another assignment from my Data Mining class. **logistic regression**, **linear discriminant analysis**, **quadratic discriminant analysis**, and **K-nearest neighbors** are applied to data regarding survival rates on the RMS Titanic.
+[LogisticReg_LDA_QDA_KNN](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_LogisticReg_LDA_QDA_KNN/Logistic_Regression_LDA_QDA_KNN.pdf) is another assignment from my Data Mining class. **logistic regression**, **linear discriminant analysis**, **quadratic discriminant analysis**, and **K-nearest neighbors** are applied to data regarding survival rates on the RMS Titanic.
 
 -----
 
