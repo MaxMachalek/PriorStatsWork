@@ -9,3 +9,11 @@ A collection of a few previous statistics projects and assignments.
 -----
 
 [Principal_Component_Analysis](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_PCA/Principal_Component_Analysis.pdf) is an assignment from my Data Mining class in which **Principal Component Analysis** and **Cluster Analysis** were used to classify flowers. 
+
+-----
+
+[DataMining_LogisticReg_LDA_QDA_KNN](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_LogisticReg_LDA_QDA_KNN/Logistic_Regression_LDA_QDA_KNN.pdf) is another assignment from my Data Mining class. **logistic regression**, **linear discriminant analysis**, **quadratic discriminant analysis**, and **K-nearest neighbors** are applied to data regarding survival rates on the RMS Titanic.
+
+-----
+
+...more to be added...
