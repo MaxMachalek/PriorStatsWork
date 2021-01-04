@@ -3,7 +3,7 @@
 A collection of a few previous statistics projects and assignments.
 =====
 
-Statistical Methods
+## Statistical Methods
 Focused on applications of simple and multiple linear regression in R #
 
 -----
@@ -13,7 +13,7 @@ Focused on applications of simple and multiple linear regression in R #
 =====
 
 ## Data Mining
-# Covered both the mathematical basis and computational implementation in R of a wide range of data mining topics. Topics included: multiple linear regression in high dimensions, cross validation methods, logistic regression, K nearest neighbors, discriminant analysis, decision trees, bagging/random forests/boosting, support vector machines, principal component analysis, and cluster analysis. 
+Covered both the mathematical basis and computational implementation in R of a wide range of data mining topics. Topics included: multiple linear regression in high dimensions, cross validation methods, logistic regression, K nearest neighbors, discriminant analysis, decision trees, bagging/random forests/boosting, support vector machines, principal component analysis, and cluster analysis. 
 
 -----
 
@@ -28,7 +28,7 @@ Focused on applications of simple and multiple linear regression in R #
 =====
 
 ## Multivariate Analysis 
-# Covered both the mathematical basis and computational implementation in R of a wide range of multivariate topics. Topics included: plotting multivariate data, multivariate regression, principal component analysis, canonical correlation analysis, cluster analysis, multidimensional scaling, multivariate analysis of variance (MANOVA), discriminant analysis, exploratory factor analysis, and confirmatory factor analysis.
+Covered both the mathematical basis and computational implementation in R of a wide range of multivariate topics. Topics included: plotting multivariate data, multivariate regression, principal component analysis, canonical correlation analysis, cluster analysis, multidimensional scaling, multivariate analysis of variance (MANOVA), discriminant analysis, exploratory factor analysis, and confirmatory factor analysis.
 
 -----
 
