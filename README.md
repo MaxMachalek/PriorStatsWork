@@ -29,3 +29,12 @@ A collection of a few previous statistics projects and assignments.
 
 -----
 
+## Machine Learning
+>Focused heavily on the mathematical derivation of machine learning methods with assignments including implementation of some methods in Python. Unfortunately I currently cannot locate my python files for these assignments but I do have a couple pdfs at hand of results and derivations. 
+>>Topics included: regression (including ridge regression and Lasso), optimization by gradient descent and Lagrange multiplier, density estimation, principal component analysis, support vector machines, nearest neighbor classifiers, naive Bayes classification, artificial neural networks, ensemble learning, and online learning.
+
+
+...more to be added...
+
+-----
+
