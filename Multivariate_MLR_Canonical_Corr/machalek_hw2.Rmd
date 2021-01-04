@@ -1,0 +1,249 @@
+---
+title: "Multivariate Analysis - H.2"
+author: "Max Machalek"
+date: "01 October 2019"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r readData}
+library(car)
+library(yacca)
+library(CCP)
+# data as loaded into a csv:
+# 72 26 9 10 11 70
+# 63 76 7 85 22 93
+# 96 31 7 83 63 73
+# 96 98 6 82 75 97
+# 84 94 6 36 77 97
+# 66 10 5 28 24 75
+# 31 40 9 64 23 75
+# 45 14 2 19 15 50
+# 42 18 6 33 13 70
+# 79 74 4 23 14 90
+# 39 12 2 37 13 70
+# 54 35 3 23 74 53
+# 60 75 5 45 58 83
+# 63 45 5 22 67 53
+
+# making data readable for rmd to knit .pdf
+dat <- read.csv("datv.csv", sep = ",", header = FALSE)
+colnames(dat) <- c("career","supervisor","finance", "variety","feedback","autonomy")
+
+Y <- dat[,1:3]
+X <- dat[,4:6]
+
+```
+
+## H.2.1  
+_(a)_  
+Supervisor is the only response with an overall F-test that indicates, at the 0.05 level, a linear
+association in the population between the predictors (variety, feedback, autonomy), and any of the responses. Because the p-value for the overall F-tests for the career and finance models was not
+below 0.05, the results of the tests do not provide sufficient evidence that those responses 
+have a linear association in the population between any of the predictors. Career had a notably 
+low p-value though (0.07), and a moderate adjusted R-squared of 0.34.
+
+Ho = all predictor regression coefficients in the model for the given univariate response
+are 0.  
+Ha = not all predictor regression coefficients in the model for the given univariate response
+are 0.
+
+Alpha = 0.05
+
+Career as response:   
+F-statistic: 3.218    
+p-value: 0.06994  
+
+We have insufficient evidence at the 0.05 level to reject the null hypothesis, and are unable
+to claim that there is a linear association in the population between career and any of 
+variety, feedback, or autonomy (p = 0.07). It is worth noting that while the p-value was not
+less than 0.05, it was very close to it.  
+
+R-squared: 0.4912, Adjusted = 0.3385.  
+
+Almost 34% of the variation in the career response is explained by the first order linear 
+regression model including variety, feedback, and autonomy. 
+
+Supervisor:  
+F-statistic: 12.34   
+p-value: 0.001067  
+
+We have sufficient evidence at the 0.05 level to reject the null hypothesis and claim that there
+is a linear association in the population between supervisor and at least one of variety, feedback,  or autonomy (p = 0.00107).  
+
+R-squared: 0.7874, Adjusted = 0.7236  
+
+Over 72% of the variation in supervisor is explained by the first order linear regression model
+including variety, feedback, and autonomy.  
+
+Finance as response:  
+F-statistic: 0.874  
+p-value: 0.4866  
+
+We have insufficient evidence at the 0.05 level to reject the null hypothesis and claim that
+there is a linear association in the population between finance and at least one of variety, 
+feedback, or autonomy (p = 0.4866).  
+
+R-squared: 0.2077, Adjusted = -0.02994  
+
+When considering an un-adjusted R-squared, 20% of the variation in finance is explained by the 
+first order li near regression model including variety, feedback, and autonomy. The adjusted
+R-squared becomes negative though, indicating that the model including all three of these 
+predictors does not actually account for any of the variation in finance.  
+```{r H.2.1 (a)}
+# career as response
+fitCareer <- lm(Y$career~X$variety + X$feedback + X$autonomy)
+summary(fitCareer)
+
+# supervisor as response
+fitSupervisor <- lm(Y$supervisor~X$variety + X$feedback + X$autonomy)
+summary(fitSupervisor)
+
+# finance as response
+fitFinance <- lm(Y$finance~X$variety + X$feedback + X$autonomy)
+summary(fitFinance)
+```
+
+
+_(b)_  
+
+Characteristic: Variety  
+Ho = B(variety)j = 0 for all j = 1, 2, 3 (j = career, supervisor, or finance)  
+Ha = B(variety)j != 0 for some j = 1, 2, 3 (j = career, supervisor, or finance)  
+Wilks test-statistic: 0.8728577  
+p-value: 0.7646  
+
+Because the test statistic is 0.873 with a p value of 0.76, we have insufficient evidence to reject the null hypothesis at the 0.05 level. We cannot claim that B(variety)j != 0 for any of the responses (j = career, supervisor, or finance).
+There is not evidence of a linear association in the population between variety and any of the responses (career, supervisor, finance).
+
+Characteristic: Feedback  
+Ho = B(feedback)j = 0 for all j = 1, 2, 3 (j = career, supervisor, or finance)  
+Ha = B(feedback)j != 0 for some j = 1, 2, 3 (j = career, supervisor, or finance)  
+Wilks test-statistic: 0.3751042  
+p-value: 0.040722  
+
+Because the test statistic is 0.375 with a p value of 0.041, we have sufficient evidence to reject the null hypothesis at the 0.05 level and claim that B(feedback)j != 0 for some response j (j = career, supervisor, or finance).
+There is evidence of a linear association in the population between feedback and at least one of the responses (career, supervisor, finance).
+
+
+Characteristic: Autonomy  
+Ho = B(autonomy)j = 0 for all j = 1, 2, 3 (j = career, supervisor, or finance)  
+Ha = B(autonomy)j != 0 for some j = 1, 2, 3 (j = career, supervisor, or finance)  
+Wilks test-statistic: 0.2663401  
+p-value: 0.010981  
+
+Because the test statistic is 0.2663 with a p value of 0.011, we have sufficient evidence to reject the null hypothesis at the 0.05 level and claim that B(autonomy)j != 0 for some response j (j = career, supervisor, or finance).
+There is evidence of a linear association in the population between autonomy and at least one of the responses (career, supervisor, finance).
+
+
+```{r}
+Y <- as.matrix(Y) # idk why I need to do this here for it to work, but I do
+mlm <- lm(Y~X$variety + X$feedback + X$autonomy)
+
+MA <- Manova(mlm, test = 'Wilks')
+
+SA <- summary(MA)
+SA
+```
+
+
+## H.2.2 ## 
+_(a)_  
+
+The first canonical correlation, CV1, is 0.919. In this context, it indicates that higher variety and lower feedback and autonomy are associated with lower career, supervisor, and finance values.  
+```{r}
+X <- as.matrix(X)
+cc <- cca(X,Y, xscale = T, yscale = T)
+cc
+```
+ 
+_(b)_  
+
+We should only retain the first canonical correlation. Given the p-values from our sequential hypothesis testing, we could conclude that at least one of p(1), p(2), or p(3) was non-zero. We could not conclude that at least one of p(2), or p(3) was zero. 
+this implies that p(1) alone is non-zero (at the 0.05 level).
+
+Ho1: p(1) == p(2) == p(3) == 0  
+Ha1: p(1) != 0 V p(2) != 0 V p(3) != 0 
+reject (jp = 0.022)
+
+Ho2:p(2) == p(3) == 0  
+Ha2:p(2) != 0 V p(3) != 0  
+fail to reject (p = 0.745)    
+  
+  
+Ho3: p(3) == 0    
+Ha3: p(3) != 0  
+fail to reject (p = 0.726)  
+
+```{r}
+wilks <- F.test.cca(cc)
+wilks
+```
+ 
+_(c)_  
+
+The first canonical variate v(1) the combination of variety (0.111, small contribution), feedback (-0.552, large contribution), and autonomy (-0.840, large contribution). This variate is higher for higher amounts of variety but lower
+feedback and lower autonomy. 
+
+The first canonical variate u(1) consists of career (-0.303, moderate contribution), supervisor (-0.785, large contribution), finance (-0.054, small contribution). This variate is higher for lower values of career, supervisor, and finance. 
+
+_(d)_
+
+The first canonical variable U1 is associated with the negative of variety, feedback, and autonomy. It has a small negative sample correlation with variety (-0.45), a moderate negative sample correlation with feedback (-0.57), and a large negative sample correlation with autonomy (-0.78). 
+
+The first canonical variable V1 is associated with the negative of career, supervisor, and finance. It has a no sample correlation with finance (-0.26), a moderate negative sample correlation with career (-0.69), and a large negative sample correlation with supervisor (-0.89).  
+```{r}
+Rxu <- cc$xcrosscorr
+Rxu
+
+Ryv <- cc$ycrosscorr
+Ryv
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
