@@ -1,4 +1,4 @@
-A collection of a few previous statistics projects and assignments.
+A collection of a few miscellaneous previous statistics projects and assignments.
 =====
 
 ## Statistical Methods
