@@ -26,6 +26,7 @@ A collection of some miscellaneous previous statistics projects and assignments.
 >Covered both the mathematical basis and computational implementation in R of a wide range of multivariate topics. 
 >>Topics included: plotting multivariate data, multivariate regression, principal component analysis, canonical correlation analysis, cluster analysis, multidimensional scaling, multivariate analysis of variance (MANOVA), discriminant analysis, exploratory factor analysis, and confirmatory factor analysis.
 
+[MLR_Canonical_Corr](https://github.com/MaxMachalek/PriorStatsWork/blob/main/Multivariate_MLR_Canonical_Corr/MLR_Canonical_Corr.pdf) is an analysis of job satisfaction based on 3 predictors and 3 response variables. It compares **separate univariate regression analyses** with a more comprehensive **multivariate regression** analysis, and also applies **canonical correlation** to examine the relationships between variables.
 
 ...more to be added...
 
