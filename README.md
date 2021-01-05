@@ -12,10 +12,10 @@ A collection of some miscellaneous previous statistics projects and assignments.
 >Covered both the mathematical basis and computational implementation in R of a wide range of data mining topics. 
 >>Topics included: multiple linear regression in high dimensions, cross validation methods, logistic regression, K nearest neighbors, discriminant analysis, decision trees, bagging/random forests/boosting, support vector machines, principal component analysis, and cluster analysis. 
 
-[Principal_Component_Analysis](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_PCA/Principal_Component_Analysis.pdf) is an assignment from my Data Mining class in which **principal component analysis** and **cluster analysis** were used to classify flowers. 
+[Principal_Component_Analysis](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_PCA/Principal_Component_Analysis.pdf) is an assignment in which **principal component analysis** and **cluster analysis** were used to classify flowers. 
 
 
-[Logistic_Regression_LDA_QDA_KNN](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_LogisticReg_LDA_QDA_KNN/Logistic_Regression_LDA_QDA_KNN.pdf) is another assignment from my Data Mining class. **logistic regression**, **linear discriminant analysis**, **quadratic discriminant analysis**, and **K-nearest neighbors** are applied to data regarding survival rates on the RMS Titanic.
+[Logistic_Regression_LDA_QDA_KNN](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_LogisticReg_LDA_QDA_KNN/Logistic_Regression_LDA_QDA_KNN.pdf) **Logistic regression**, **linear discriminant analysis**, **quadratic discriminant analysis**, and **K-nearest neighbors** are applied to data regarding survival rates on the RMS Titanic.
 
 
 ...more to be added...
