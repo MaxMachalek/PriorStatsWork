@@ -33,7 +33,7 @@ A collection of some miscellaneous previous statistics projects and assignments.
 -----
 
 ## Machine Learning
->Focused heavily on the mathematical derivation of machine learning methods with assignments including implementation of some methods in Python. Unfortunately I currently cannot locate my python files for these assignments but I do have a couple pdfs at hand of results and derivations. 
+>Focused heavily on the mathematical derivation of machine learning methods with assignments including implementation of some methods in Python. Unfortunately I currently cannot locate my python files for these assignments but I do have some results and derivations. 
 >>Topics included: regression (including ridge regression and Lasso), optimization by gradient descent and Lagrange multiplier, density estimation, principal component analysis, support vector machines, nearest neighbor classifiers, naive Bayes classification, artificial neural networks, ensemble learning, and online learning.
 
 [Gradient_Descent_and_Lagrange](https://github.com/MaxMachalek/PriorStatsWork/blob/main/Gradient_Descent_and_Lagrange.pdf) is a simple assignment in which we utilize both **gradient descent** and **Lagrange multiplier** methods of **optimization**. It required creating an update formula with a stopping critereon then implemented those in python, plotting convergence graphs with different hyperparameters in addition to applying the **Lagrange multiplier** for a separate minimization problem. 
