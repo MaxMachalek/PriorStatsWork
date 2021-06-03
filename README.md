@@ -14,7 +14,7 @@ A collection of some miscellaneous previous statistics projects and assignments.
 >Covered both the mathematical basis and computational implementation in R of a wide range of data mining topics. 
 >>Topics included: multiple linear regression in high dimensions, cross validation methods, logistic regression, K nearest neighbors, discriminant analysis, decision trees, bagging/random forests/boosting, support vector machines, principal component analysis, and cluster analysis. 
 
-### Example Work:
+#### Example Work:
 
 [Principal_Component_Analysis](https://github.com/MaxMachalek/PriorStatsWork/blob/main/DataMining_PCA/Principal_Component_Analysis.pdf) is an assignment in which **principal component analysis** and **cluster analysis** were used to classify flowers. 
 
@@ -28,7 +28,7 @@ A collection of some miscellaneous previous statistics projects and assignments.
 >Covered both the mathematical basis and computational implementation in R of a wide range of multivariate topics. 
 >>Topics included: plotting multivariate data, multivariate regression, principal component analysis, canonical correlation analysis, cluster analysis, multidimensional scaling, multivariate analysis of variance (MANOVA), discriminant analysis, exploratory factor analysis, and confirmatory factor analysis.
 
-### Example Work:
+#### Example Work:
 
 [MLR_Canonical_Corr](https://github.com/MaxMachalek/PriorStatsWork/blob/main/Multivariate_MLR_Canonical_Corr/MLR_Canonical_Corr.pdf) is an analysis of job satisfaction based on 3 predictors and 3 response variables. It compares **separate univariate regression analyses** with a more comprehensive **multivariate regression** analysis, and also applies **canonical correlation** to examine the relationships between variables.
 
@@ -38,7 +38,7 @@ A collection of some miscellaneous previous statistics projects and assignments.
 >Focused heavily on the mathematical derivation of machine learning methods with assignments including implementation of some methods in Python. Unfortunately I currently cannot locate my python files for these assignments but I do have some results and derivations. 
 >>Topics included: regression (including ridge regression and Lasso), optimization by gradient descent and Lagrange multiplier, density estimation, principal component analysis, support vector machines, nearest neighbor classifiers, naive Bayes classification, artificial neural networks, ensemble learning, and online learning.
 
-### Example Work:
+#### Example Work:
 
 [Gradient_Descent_and_Lagrange](https://github.com/MaxMachalek/PriorStatsWork/blob/main/Gradient_Descent_and_Lagrange.pdf) is a simple assignment in which we utilize both **gradient descent** and **Lagrange multiplier** methods of **optimization**. It required creating an update formula with a stopping critereon then implemented those in python, plotting convergence graphs with different hyperparameters in addition to applying the **Lagrange multiplier** for a separate minimization problem. 
 
